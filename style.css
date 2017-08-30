@@ -1,4 +1,28 @@
 #main {
-    text-align: center;
     color: red;
+    text-align: center;
+    
+};
+
+img {
+    max-width: 100%;
+  }
+  
+body {
+    line-height: 1.5;
+    font-size: 100%;
+    color: #313131;
+  }
+.icon-menu {
+    font-size: 3em;
+    float: right;
+  };
+
+
+
+@media only screen and (max-width: 640px) {
+    #main {
+        color: #120E0E;
+        text-align: center;
+    };
 }
