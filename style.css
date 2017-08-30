@@ -1,8 +1,10 @@
+
+
 #main {
     color: red;
     text-align: center;
     
-};
+}
 
 img {
     max-width: 100%;
@@ -16,13 +18,17 @@ body {
 .icon-menu {
     font-size: 3em;
     float: right;
-  };
+  }
 
-
-
-@media only screen and (max-width: 640px) {
+  @media only screen and (min-width: 640px) {
+    .icon-menu {
+      display: none;
+  }
     #main {
-        color: #120E0E;
-        text-align: center;
-    };
+    color: #141111;
+    text-align: left;
+  }
 }
+
+
+
