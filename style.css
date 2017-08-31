@@ -1,9 +1,19 @@
 
+ul {
+  display: none;
+}
+
+.icon-menu:hover ~ ul {
+  display: block;
+}
+
+.template {
+  display: none;
+}
 
 #main {
-    color: red;
-    text-align: center;
-    
+    color: #F94D07;
+    text-align: center;  
 }
 
 img {
@@ -21,6 +31,9 @@ body {
   }
 
   @media only screen and (min-width: 640px) {
+    ul{
+      display: block;
+    }
     .icon-menu {
       display: none;
   }

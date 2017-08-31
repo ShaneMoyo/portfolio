@@ -1,8 +1,20 @@
 'use strict';
 
-var rawData = {
+var rawData = [{
   title: 'About Me Page',
   url: 'https://shanemoyo.github.io/About_me/',
   image: 'aboutme.jpg',
   description: 'My first project, an about me page'
-};
+},
+{
+  title: 'salmon Cookies',
+  url: 'https://shanemoyo.github.io/About_me/',
+  image: 'salmon.jpg',
+  description: 'My second project, salmon cookies'
+},
+{
+  title: 'bus-mall',
+  url: 'https://shanemoyo.github.io/bus-mall/',
+  image: 'buss.jpg',
+  description: 'My third project, bus-mall'
+}];
