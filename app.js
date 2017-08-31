@@ -1,5 +1,5 @@
 'use strict';
-
+var articles = [];
 //Project poost constructor function. 
 function Projects (rawData){
   this.title = rawData.title;
@@ -10,19 +10,21 @@ function Projects (rawData){
 }
 
 Projects.prototype.toHtml = function() {
-  console.log('yayyy');
   var $newArticle = $('article.template').clone();
   $newArticle.removeClass('template');
   $newArticle.find('.byline a').html(this.author);
   $newArticle.find('.byline a').attr('href', this.url);
   $newArticle.find('h1:first').html(this.title);
   $newArticle.find('.article-body').html(this.description);
-  $newArticle.append();
+  $newArticle.append('<hr>');
   return $newArticle;
 };
 
 for (var i = 0; i < rawData.length; i++){
-  var newPost = new Projects(rawData[i]);
-  newPost.toHtml();
+  articles.push(new Projects(rawData[i]));
 }
-console.log(newPost);
+
+articles.forEach(function(article){
+  $('#articles').append(article.toHtml());
+});
+
