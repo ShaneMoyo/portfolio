@@ -1,18 +1,19 @@
 
-ul{
+ul {
   display: none;
 }
 
 .icon-menu:hover ~ ul {
   display: block;
-  
 }
 
+.template {
+  display: none;
+}
 
 #main {
     color: #F94D07;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 img {
