@@ -3,7 +3,6 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
     <link href="styles/icon.css" type="text/css" rel="stylesheet">
     <link href="styles/style.css" type="text/css" rel="stylesheet"> 
     <title>Welcome to Myportfolio</title>
@@ -14,7 +13,9 @@
     <h1 id="main">My Projects</h1>
     <nav class="main-nav">
             <div class="icon-menu"></div>
-            <ul id="list">
+            <ul class="template" id="list">
+              <li id="home">Home</li>
+              <li id="AboutMe">About Me</li>
               <li><a href="https://github.com/ShaneMoyo" target="_blank" class="icon-twitter3"> instagram</a></li>
               <li><a href="https://www.instagram.com/shanemoyo/" target="_blank" class="icon-github"> GitHub</a></li>
             </ul>
@@ -22,14 +23,19 @@
       <section id="articles">
         <article class="template" data-category="cat">
           <header>
-            <h1>Title</h1>
+            <h1></h1>
             <div class="byline">
-              By <address><a href="">Author Name</a></address>
+              by <address><a href=""></a></address>
             </div>
           </header>
           <section class="article-body"></section>
         </article>
   </section>
+  <div id="information">
+    <h1>About me</h1>
+    <p>Hello! My Name is Shane Moyo, thank you for visiting my page. I am 25 years old, I was born in Portland, Oregon on July 18th 1992. I am a student at Portland State University as well as Alchemy Code Lab! I love to travel, someday I hope to travel all over the world! My favorite pass time is drawing so, I spend most of my free time trying to improve my doodles. 
+      When I am not drawing I like to spend time reading, I especially enjoy books about Science and Mathematics.</p>
+  </div>
   <div class="holdpost"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='data.js'></script>

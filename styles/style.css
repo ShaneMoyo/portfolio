@@ -1,11 +1,8 @@
 
 ul {
-  display: none;
-}
-
-.icon-menu:hover ~ ul {
   display: block;
 }
+
 
 .template {
   display: none;
