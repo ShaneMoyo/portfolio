@@ -30,7 +30,7 @@ articles.forEach(function(article){
 
 $('.icon-menu').click(function(){
   console.log(event.target);
-  $('#list').toggleClass('template');
+  $('#list').toggleClass('show');
   console.log($('#list'));
 })
 
