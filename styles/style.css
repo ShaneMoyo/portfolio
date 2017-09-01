@@ -7,7 +7,9 @@ ul {
 .template {
   display: none;
 }
-
+.show {
+  display: none;
+}
 #main {
     color: #F94D07;
     text-align: center;  
@@ -37,6 +39,10 @@ body {
     #main {
     color: #141111;
     text-align: left;
+  }
+
+  .show {
+    display: block;
   }
 }
 
