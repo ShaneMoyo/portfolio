@@ -10,14 +10,11 @@ function Projects (rawData){
 }
 
 Projects.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
-  $newArticle.removeClass('template');
-  $newArticle.find('.byline a').html(this.author);
-  $newArticle.find('.byline a').attr('href', this.url);
-  $newArticle.find('h1:first').html(this.title);
-  $newArticle.find('.article-body').html(this.description);
-  $newArticle.append('<hr>');
-  return $newArticle;
+  var template = $( '#post-template' ).html();
+  var templateFiller = Handlebars.compile( template );
+  var filledTemplate = templateFiller( this );
+  return filledTemplate;
+
 };
 
 for (var i = 0; i < rawData.length; i++){
@@ -25,7 +22,7 @@ for (var i = 0; i < rawData.length; i++){
 }
 
 articles.forEach(function(article){
-  $('#articles').append(article.toHtml());
+  $('.holdpost').append(article.toHtml());
 });
 
 $('.icon-menu').click(function(){

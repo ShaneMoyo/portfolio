@@ -7,6 +7,20 @@
     <link href="styles/style.css" type="text/css" rel="stylesheet"> 
     <title>Welcome to Myportfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script id="post-template" type="text/x-handlebars-template">
+      <section id="articles">
+        <article data-category="cat">
+          <header>
+            <h1><a href="{{url}}">{{title}}</a></h1>
+            <div class="byline">
+              by <address>{{author}}</address>
+            </div>
+          </header>
+          <section class="article-body"></section>
+        </article>
+      </section>
+    </script>
+
 </head>
 <body>
 
@@ -20,23 +34,13 @@
               <li><a href="https://www.instagram.com/shanemoyo/" target="_blank" class="icon-github"> GitHub</a></li>
             </ul>
       </nav>
-      <section id="articles">
-        <article class="template" data-category="cat">
-          <header>
-            <h1></h1>
-            <div class="byline">
-              by <address><a href=""></a></address>
-            </div>
-          </header>
-          <section class="article-body"></section>
-        </article>
-  </section>
   <div id="information">
     <h1>About me</h1>
     <p>Hello! My Name is Shane Moyo, thank you for visiting my page. I am 25 years old, I was born in Portland, Oregon on July 18th 1992. I am a student at Portland State University as well as Alchemy Code Lab! I love to travel, someday I hope to travel all over the world! My favorite pass time is drawing so, I spend most of my free time trying to improve my doodles. 
       When I am not drawing I like to spend time reading, I especially enjoy books about Science and Mathematics.</p>
   </div>
   <div class="holdpost"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='data.js'></script>
     <script src='app.js'></script>
