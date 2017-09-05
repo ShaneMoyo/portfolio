@@ -3,6 +3,15 @@ ul {
   display: block;
 }
 
+#articles{
+  background-color: #FFDA9E;
+}
+
+li{
+  padding: 5px;
+  display: inline;
+}
+
 
 .template {
   display: none;
@@ -11,7 +20,7 @@ ul {
   display: none;
 }
 #main {
-    color: #F94D07;
+    color: black;
     text-align: center;  
 }
 
