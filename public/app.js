@@ -12,7 +12,7 @@ function Projects (rawData){
 if(localStorage.rawData){
   fillArray(JSON.parse(localStorage.getItem('rawData')));
 } else {
-  $.getJSON('/data.json')
+  $.getJSON('data.json')
    .done(function(data){
     localStorage.setItem('rawData', JSON.stringify(data))
   })
