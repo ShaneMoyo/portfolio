@@ -1,26 +1,18 @@
 
 ul {
+  display: none;
+}
+
+.icon-menu:hover ~ ul {
   display: block;
 }
-
-#articles{
-  background-color: #FFDA9E;
-}
-
-li{
-  padding: 5px;
-  display: inline;
-}
-
 
 .template {
   display: none;
 }
-.show {
-  display: none;
-}
+
 #main {
-    color: black;
+    color: #F94D07;
     text-align: center;  
 }
 
@@ -31,7 +23,7 @@ img {
 body {
     line-height: 1.5;
     font-size: 100%;
-    color: #313131;
+    color: #003FDF;
   }
 .icon-menu {
     font-size: 3em;
@@ -46,12 +38,8 @@ body {
       display: none;
   }
     #main {
-    color: #141111;
+    color: #26C71C;
     text-align: left;
-  }
-
-  .show {
-    display: block;
   }
 }
 
