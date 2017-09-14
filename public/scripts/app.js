@@ -38,21 +38,9 @@ articles.forEach(function(article){
 });
 
 $('.icon-menu').click(function(){
-  console.log(event.target);
-  $('#list').toggleClass('show');
+  $('#list').show();
   console.log($('#list'));
 })
 
-$('#list').click(function(){
-  console.log(event.target.id);
-  if( event.target.id === "home" ){
-    $('#information').hide();
-    $('article').show();
-  }
-  if( event.target.id === "AboutMe" ){
-    $('article').hide();
-    $('#information').show();
-  }
-})
 
 
