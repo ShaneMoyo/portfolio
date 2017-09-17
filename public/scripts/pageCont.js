@@ -17,5 +17,5 @@ function myAbout() {
     type: 'GET'
   })
     .then(data => repos = data, err => console.error(err)) 
-    .then(console.log(repos));
+    .then(console.log('got em!',repos));
 }
