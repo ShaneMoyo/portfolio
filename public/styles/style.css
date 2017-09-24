@@ -1,5 +1,5 @@
 
-ul {
+.show li {
   display: none;
 }
 
@@ -7,10 +7,12 @@ ul {
   display: none;
 }
 
-#main {
-    color: #F94D07;
-    text-align: center;  
-}
+
+  #main {
+    color: rgb(219, 196, 48);
+    text-align: center;
+  } 
+
 
 img {
     max-width: 100%;
@@ -19,24 +21,44 @@ img {
 body {
     line-height: 1.5;
     font-size: 100%;
-    color: #003FDF;
+    color: #4F4F4F;
   }
 .icon-menu {
     font-size: 3em;
     float: right;
   }
 
+
+  #projects li{
+    text-align: center;
+    width: 70%;
+  }
+  #projects li:hover{
+    background-color: rgb(219, 196, 48);
+    width: 100%;
+  }
   @media only screen and (min-width: 640px) {
     ul{
       display: block;
     }
+    .table {
+      display: table;   
+      margin: 0 auto;
+      
+    }
+    .main-nav{
+      display: block;
+      background-color: rgb(219, 196, 48);
+    }
+    .show li{
+      display: inline;
+      margin: 10px;
+      
+    }
     .icon-menu {
       display: none;
   }
-    #main {
-    color: #26C71C;
-    text-align: left;
-  }
+   
 }
 
 

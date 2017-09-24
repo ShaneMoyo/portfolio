@@ -9,15 +9,6 @@ function Projects (rawData){
   this.author = 'shane'
 }
 
-if(localStorage.rawData){
-  fillArray(JSON.parse(localStorage.getItem('rawData')));
-} else {
-  $.getJSON('data.json')
-   .done(function(data){
-    localStorage.setItem('rawData', JSON.stringify(data))
-  })
-  fillArray(JSON.parse(localStorage.getItem('rawData')));
-}
 
 Projects.prototype.toHtml = function() {
   var template = $( '#post-template' ).html();
@@ -38,7 +29,7 @@ articles.forEach(function(article){
 });
 
 $('.icon-menu').click(function(){
-  $('#list').show();
+  $('.show li').toggle();
   console.log($('#list'));
 })
 
