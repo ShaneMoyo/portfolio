@@ -1,3 +1,5 @@
+.env
+
 # Mac Droppings
 */.DS_Store
 
@@ -21,3 +23,4 @@ coverage
 
 # node-waf configuration
 .lock-wscript
+.env
